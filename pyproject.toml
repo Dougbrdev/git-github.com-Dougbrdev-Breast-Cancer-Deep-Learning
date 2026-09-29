@@ -1,0 +1,29 @@
+[project]
+name = "breast-cancer-deep-learning-classification"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Dougbrdev", email = "douglasrodriguesdasilva53@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "jupyter>=1.1.1",
+    "kaggle>=2.2.4",
+    "kagglehub>=1.0.2",
+    "keras>=3.15.1",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+    "tensorflow>=2.22.0rc0",
+    "tf-keras>=2.15.0",
+]
+
+[project.scripts]
+breast-cancer-deep-learning-classification = "breast_cancer_deep_learning_classification:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
